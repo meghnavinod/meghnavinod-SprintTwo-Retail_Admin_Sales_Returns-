@@ -1,0 +1,731 @@
+{
+  "id": "e7938827-8ebe-4f81-a4b0-102674577c34",
+  "version": "2.0",
+  "name": "Automation_SmokeTest_Retail_Admin_Categories",
+  "url": "http://retailm1.upskills.in/admin/index.php?route=catalog/category&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF&page=2",
+  "tests": [{
+    "id": "2b261cd2-209b-4caf-bb63-be68bce75dac",
+    "name": "Automation_SmokeTest_Retail_Admin_Categories_Delete",
+    "commands": [{
+      "id": "1ee7ae68-6eeb-45c3-aef6-3ca555a4289c",
+      "comment": "",
+      "command": "open",
+      "target": "http://retailm1.upskills.in/admin/index.php?route=catalog/category&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67014667-1c71-46b6-8f00-8f42b2523ba4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "932x694",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be82b4f2-1d57-476e-a313-20f776dd5fbd",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) input",
+      "targets": [
+        ["css=tr:nth-child(2) input", "css:finder"],
+        ["xpath=(//input[@name='selected[]'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='form-category']/div/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a490703-5302-4cc8-989b-2dd9c07ff9d8",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05650ef8-7774-478c-958b-83f2320c3927",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c558413f-c8be-4c08-ab47-178159dc8070",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4170516-b8ba-488c-89ac-5dc9da96f02b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d023c0d1-aaf0-470e-bba4-c878df58190a",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Are you sure?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5aa1281f-4b6e-4ede-9512-5b8b44d72313",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b77a1438-0dcb-40d4-ad82-dda35a7b99e1",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Categories",
+      "targets": [],
+      "value": "Successfully:You have modified categories!\\n*(Selected Item Deleted)"
+    }, {
+      "id": "b661ef35-053b-4ba8-b85c-137e3d90bcfe",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fc81d5f9-66c3-4c0c-9860-826da888f3bc",
+    "name": "Automation_SmokeTest_Retail_Admin_Categories_Add",
+    "commands": [{
+      "id": "5e9d4e82-9a1d-45aa-a040-853ab8951e01",
+      "comment": "",
+      "command": "open",
+      "target": "http://retailm1.upskills.in/admin/index.php?route=catalog/category&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd8cce19-95cb-4deb-b4c5-cc995238e3f8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "632d8259-c5a2-431c-a961-34b7769d7eb1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pull-right > .btn-primary",
+      "targets": [
+        ["css=.pull-right > .btn-primary", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://retailm1.upskills.in/admin/index.php?route=catalog/category/add&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF']", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6277375a-e73b-4703-beb1-43b5259cb44d",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-name1",
+      "targets": [
+        ["id=input-name1", "id"],
+        ["name=category_description[1][name]", "name"],
+        ["css=#input-name1", "css:finder"],
+        ["xpath=//input[@id='input-name1']", "xpath:attributes"],
+        ["xpath=//div[@id='language1']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a9b7d2e-9b05-4e96-b1e3-4c0b5b30304c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.note-current-fontname",
+      "targets": [
+        ["css=.note-current-fontname", "css:finder"],
+        ["xpath=//div[@id='language1']/div[2]/div/div/div[2]/div[3]/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Open Sans')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f23cb1b-e357-45ae-a653-32d64608ae5d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.note-current-fontname",
+      "targets": [
+        ["css=.note-current-fontname", "css:finder"],
+        ["xpath=//div[@id='language1']/div[2]/div/div/div[2]/div[3]/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Open Sans')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bf8cb25-497c-4679-b02f-2b157372f19c",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-name1",
+      "targets": [
+        ["id=input-name1", "id"],
+        ["name=category_description[1][name]", "name"],
+        ["css=#input-name1", "css:finder"],
+        ["xpath=//input[@id='input-name1']", "xpath:attributes"],
+        ["xpath=//div[@id='language1']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Kitchen Appliances"
+    }, {
+      "id": "03201925-bb74-4cc1-a9bc-af4b8b984a2b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.note-editable",
+      "targets": [
+        ["css=.note-editable", "css:finder"],
+        ["xpath=//div[@id='language1']/div[2]/div/div/div[3]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc673cb1-52d4-487a-b244-ad273374268d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.note-para > .note-btn:nth-child(2)",
+      "targets": [
+        ["css=.note-para > .note-btn:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[139]", "xpath:attributes"],
+        ["xpath=//div[@id='language1']/div[2]/div/div/div[2]/div[5]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[5]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df6ec2be-90ee-4f20-8366-ae49308fb39e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.note-para > .note-btn:nth-child(2)",
+      "targets": [
+        ["css=.note-para > .note-btn:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='button'])[139]", "xpath:attributes"],
+        ["xpath=//div[@id='language1']/div[2]/div/div/div[2]/div[5]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[5]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ae2c4f5-42df-4292-a809-a444f225fcd6",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.note-editable",
+      "targets": [
+        ["css=.note-editable", "css:finder"],
+        ["xpath=//div[@id='language1']/div[2]/div/div/div[3]/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]", "xpath:position"]
+      ],
+      "value": "<p>All kinds of appliances like stove,microwave, utensils,dishwash etc&nbsp;&nbsp;&nbsp;&nbsp;</p>"
+    }, {
+      "id": "872543ee-e1d0-48b4-8c69-66d41c4e545d",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-meta-title1",
+      "targets": [
+        ["id=input-meta-title1", "id"],
+        ["name=category_description[1][meta_title]", "name"],
+        ["css=#input-meta-title1", "css:finder"],
+        ["xpath=//input[@id='input-meta-title1']", "xpath:attributes"],
+        ["xpath=//div[@id='language1']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6923cfe2-33fe-472c-aa6c-3ad2a85cd89a",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-meta-title1",
+      "targets": [
+        ["id=input-meta-title1", "id"],
+        ["name=category_description[1][meta_title]", "name"],
+        ["css=#input-meta-title1", "css:finder"],
+        ["xpath=//input[@id='input-meta-title1']", "xpath:attributes"],
+        ["xpath=//div[@id='language1']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Appliances"
+    }, {
+      "id": "ce88af7d-d2c2-4774-9c93-da6ed1f43a8b",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-meta-description1",
+      "targets": [
+        ["id=input-meta-description1", "id"],
+        ["name=category_description[1][meta_description]", "name"],
+        ["css=#input-meta-description1", "css:finder"],
+        ["xpath=//textarea[@id='input-meta-description1']", "xpath:attributes"],
+        ["xpath=//div[@id='language1']/div[4]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cd703e3-9a3f-45ef-a273-daeb05f34203",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-meta-description1",
+      "targets": [
+        ["id=input-meta-description1", "id"],
+        ["name=category_description[1][meta_description]", "name"],
+        ["css=#input-meta-description1", "css:finder"],
+        ["xpath=//textarea[@id='input-meta-description1']", "xpath:attributes"],
+        ["xpath=//div[@id='language1']/div[4]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/textarea", "xpath:position"]
+      ],
+      "value": "Kitchen Appliances"
+    }, {
+      "id": "703550ad-26fb-4c6c-83c6-0311387d3533",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.note-current-color-button",
+      "targets": [
+        ["css=.note-current-color-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='language1']/div[2]/div/div/div[2]/div[4]/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff0a94d7-805c-4112-a901-3ba875192cf5",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.note-current-color-button",
+      "targets": [
+        ["css=.note-current-color-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='language1']/div[2]/div/div/div[2]/div[4]/div/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f35b916d-149f-41f2-baee-e1912c511afd",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-meta-keyword1",
+      "targets": [
+        ["id=input-meta-keyword1", "id"],
+        ["name=category_description[1][meta_keyword]", "name"],
+        ["css=#input-meta-keyword1", "css:finder"],
+        ["xpath=//textarea[@id='input-meta-keyword1']", "xpath:attributes"],
+        ["xpath=//div[@id='language1']/div[5]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[5]/div/textarea", "xpath:position"]
+      ],
+      "value": "Kitchen"
+    }, {
+      "id": "f53a3c57-d8d1-4b7d-b11b-c7077cff4565",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Data",
+      "targets": [
+        ["linkText=Data", "linkText"],
+        ["css=.nav-tabs > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Data')]", "xpath:link"],
+        ["xpath=//form[@id='form-category']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#tab-data')]", "xpath:href"],
+        ["xpath=//form/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Data')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1fb86f8-970d-4090-983d-f689d676f698",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-parent",
+      "targets": [
+        ["id=input-parent", "id"],
+        ["name=path", "name"],
+        ["css=#input-parent", "css:finder"],
+        ["xpath=//input[@id='input-parent']", "xpath:attributes"],
+        ["xpath=//div[@id='tab-data']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39d6da60-a52b-4e02-a95a-2dfb16b41380",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-parent",
+      "targets": [
+        ["id=input-parent", "id"],
+        ["name=path", "name"],
+        ["css=#input-parent", "css:finder"],
+        ["xpath=//input[@id='input-parent']", "xpath:attributes"],
+        ["xpath=//div[@id='tab-data']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "Kitchen"
+    }, {
+      "id": "155028a7-7b6b-441d-9ced-1302dcee605c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-10 > .dropdown-menu > li:nth-child(5) > a",
+      "targets": [
+        ["css=.col-sm-10 > .dropdown-menu > li:nth-child(5) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Kitchen')])[4]", "xpath:link"],
+        ["xpath=//div[@id='tab-data']/div/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[33]", "xpath:href"],
+        ["xpath=//div/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "660bcafc-d7be-4c73-b9e1-ccabe2f9f9d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-filter",
+      "targets": [
+        ["id=input-filter", "id"],
+        ["name=filter", "name"],
+        ["css=#input-filter", "css:finder"],
+        ["xpath=//input[@id='input-filter']", "xpath:attributes"],
+        ["xpath=//div[@id='tab-data']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c7879e0-0d1f-47c2-8efb-959bc109a850",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Design",
+      "targets": [
+        ["linkText=Design", "linkText"],
+        ["css=.nav-tabs > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Design')]", "xpath:link"],
+        ["xpath=//form[@id='form-category']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#tab-design')]", "xpath:href"],
+        ["xpath=//form/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fec3b770-949c-4983-b5a3-fda14d4f1d07",
+      "comment": "",
+      "command": "click",
+      "target": "name=category_layout[0]",
+      "targets": [
+        ["name=category_layout[0]", "name"],
+        ["css=.text-left > .form-control", "css:finder"],
+        ["xpath=//select[@name='category_layout[0]']", "xpath:attributes"],
+        ["xpath=//div[@id='tab-design']/div/table/tbody/tr/td[2]/select", "xpath:idRelative"],
+        ["xpath=//td[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5550e7e8-4eed-4e9a-81f7-c8788a42550e",
+      "comment": "",
+      "command": "select",
+      "target": "name=category_layout[0]",
+      "targets": [],
+      "value": "label=Home"
+    }, {
+      "id": "e695f42c-b7c4-4015-bd17-e07f19190542",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.pull-right > .btn-primary",
+      "targets": [
+        ["css=.pull-right > .btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0d58869-858e-4ef0-a546-87766d29a50d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.pull-right > .btn-primary",
+      "targets": [
+        ["css=.pull-right > .btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a37f84a-946b-479e-addb-c298f9fc3c66",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.pull-right > .btn-primary",
+      "targets": [
+        ["css=.pull-right > .btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67fa515c-7c98-4c24-b934-c8432d550b4f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.pull-right > .btn-primary",
+      "targets": [
+        ["css=.pull-right > .btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13f4b589-6c1e-4769-8042-bfa5f3723890",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-save",
+      "targets": [
+        ["css=.fa-save", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a015dd9-0c68-4cc8-beb5-8bb4aa11ff69",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://retailm1.upskills.in/admin/index.php?route=catalog/category/repair&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF']", "xpath:href"],
+        ["xpath=//div/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50f27698-1dbe-4720-ae16-371adaa463a4",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-default",
+      "targets": [
+        ["css=.btn-default", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div/a[2]", "xpath:idRelative"],
+        ["xpath=//a[@href='http://retailm1.upskills.in/admin/index.php?route=catalog/category/repair&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF']", "xpath:href"],
+        ["xpath=//div/div/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f313820-45e1-4f7b-87f0-97e43908a3b3",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Categories",
+      "targets": [],
+      "value": "Success: You have modified categories!\\n*(Item Added)"
+    }, {
+      "id": "2a860c75-0547-4073-97b1-4e23355c3463",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "36aac045-e1a5-4281-a279-c766bc0fae45",
+    "name": "Automation_SmokeTest_Retail_Admin_Categories_Edit",
+    "commands": [{
+      "id": "2ebeeea5-d5c0-458b-8e67-37f91385d814",
+      "comment": "",
+      "command": "open",
+      "target": "http://retailm1.upskills.in/admin/index.php?route=catalog/category&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF&page=2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7d1f60e7-fd98-42a2-afa8-682027728a3b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e30f7d3e-eddc-44d1-84f2-0c08650b4398",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.pull-right > .btn-primary",
+      "targets": [
+        ["css=.pull-right > .btn-primary", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://retailm1.upskills.in/admin/index.php?route=catalog/category/add&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF&page=2']", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51871851-a083-4866-b4fe-793adb023165",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.pull-right > .btn-primary",
+      "targets": [
+        ["css=.pull-right > .btn-primary", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://retailm1.upskills.in/admin/index.php?route=catalog/category/add&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF&page=2']", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "888828eb-48ab-4012-8ee4-1c376d91c46d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(3) .btn",
+      "targets": [
+        ["css=tr:nth-child(3) .btn", "css:finder"],
+        ["xpath=//form[@id='form-category']/div/table/tbody/tr[3]/td[4]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://retailm1.upskills.in/admin/index.php?route=catalog/category/edit&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF&category_id=989&page=2']", "xpath:href"],
+        ["xpath=//tr[3]/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a57087aa-4202-473e-b572-1682a7b67d51",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=tr:nth-child(3) .btn",
+      "targets": [
+        ["css=tr:nth-child(3) .btn", "css:finder"],
+        ["xpath=//form[@id='form-category']/div/table/tbody/tr[3]/td[4]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://retailm1.upskills.in/admin/index.php?route=catalog/category/edit&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF&category_id=989&page=2']", "xpath:href"],
+        ["xpath=//tr[3]/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b86347ee-9bbc-4cdc-b939-51f8ab714034",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(2) .btn",
+      "targets": [
+        ["css=tr:nth-child(2) .btn", "css:finder"],
+        ["xpath=//form[@id='form-category']/div/table/tbody/tr[2]/td[4]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://retailm1.upskills.in/admin/index.php?route=catalog/category/edit&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF&category_id=987&page=2']", "xpath:href"],
+        ["xpath=//tr[2]/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8b3f57a-6f64-4135-b05e-8d746b5276c1",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=tr:nth-child(2) .btn",
+      "targets": [
+        ["css=tr:nth-child(2) .btn", "css:finder"],
+        ["xpath=//form[@id='form-category']/div/table/tbody/tr[2]/td[4]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://retailm1.upskills.in/admin/index.php?route=catalog/category/edit&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF&category_id=987&page=2']", "xpath:href"],
+        ["xpath=//tr[2]/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64e91a32-71e7-4aa9-a8f7-f557393b4b95",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(3) .btn",
+      "targets": [
+        ["css=tr:nth-child(3) .btn", "css:finder"],
+        ["xpath=//form[@id='form-category']/div/table/tbody/tr[3]/td[4]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://retailm1.upskills.in/admin/index.php?route=catalog/category/edit&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF&category_id=989&page=2']", "xpath:href"],
+        ["xpath=//tr[3]/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f6bfec4-ce6e-416b-aa48-f82e8b0b9370",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .btn",
+      "targets": [
+        ["css=tr:nth-child(3) .btn", "css:finder"],
+        ["xpath=//form[@id='form-category']/div/table/tbody/tr[3]/td[4]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://retailm1.upskills.in/admin/index.php?route=catalog/category/edit&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF&category_id=989&page=2']", "xpath:href"],
+        ["xpath=//tr[3]/td[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2004060b-0d35-4d57-b648-aec8d98681f5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Data",
+      "targets": [
+        ["linkText=Data", "linkText"],
+        ["css=.nav-tabs > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Data')]", "xpath:link"],
+        ["xpath=//form[@id='form-category']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#tab-data')]", "xpath:href"],
+        ["xpath=//form/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Data')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ec857d9-b58f-4a11-a6e6-02e3a72bd55c",
+      "comment": "",
+      "command": "click",
+      "target": "id=input-sort-order",
+      "targets": [
+        ["id=input-sort-order", "id"],
+        ["name=sort_order", "name"],
+        ["css=#input-sort-order", "css:finder"],
+        ["xpath=//input[@id='input-sort-order']", "xpath:attributes"],
+        ["xpath=//div[@id='tab-data']/div[8]/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22a13273-00a3-4e89-a525-e0f74239be18",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "932ebd97-8873-4076-8c88-a5da247bbd0b",
+      "comment": "",
+      "command": "type",
+      "target": "id=input-sort-order",
+      "targets": [
+        ["id=input-sort-order", "id"],
+        ["name=sort_order", "name"],
+        ["css=#input-sort-order", "css:finder"],
+        ["xpath=//input[@id='input-sort-order']", "xpath:attributes"],
+        ["xpath=//div[@id='tab-data']/div[8]/div/input", "xpath:idRelative"],
+        ["xpath=//div[8]/div/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "94508c40-31c5-4124-825b-2edd869dbfc3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pull-right > .btn-primary",
+      "targets": [
+        ["css=.pull-right > .btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cddc69c-bbac-48ce-a1e0-eae1e73f674d",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Categories",
+      "targets": [],
+      "value": "Success: You have modified categories!(Sort Order modified)"
+    }, {
+      "id": "fbd5e3d6-2423-4d26-a784-89ec56a7a9fd",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4a6c352c-5519-4f3b-ab14-e4c62bd2a77c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2b261cd2-209b-4caf-bb63-be68bce75dac"]
+  }],
+  "urls": ["http://retailm1.upskills.in/admin/index.php?route=catalog/category&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF", "http://retailm1.upskills.in/admin/index.php?route=catalog/category&token=aHUpLQElnCxH0kQZpNJTbskS8WJqwaNF&page=2"],
+  "plugins": []
+}
